@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Titulo para a página</title>
+</head>
+<body>
+<p>
+	Temos 6 tamanhos para o titulo em html: h1, h2, h3, h4, h5 e h6 todos eles abrem-se com < hsize> e fecham-se com </ hsize>.
+
+	Os varios tipos de tiyulos são:
+
+</p>
+
+Titulos:
+<h1>Titulo</h1>
+<h2>Titulo</h2>
+<h3>Titulo</h3>
+<h4>Titulo</h4>
+<h5>Titulo</h5>
+<h6>Titulo</h6>
+
+Textos:
+<p>
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor <u>incididunt ut labore</u> et dolore magna aliqua. 
+<p>
+	<b>Ut enim ad minim veniam</b>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+<p>
+	<i>Duis aute irure dolor</i> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+<p>
+	<b><i><u>Excepteur sint occaecat cupidatat</u></i></b> non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</p>
+
+<br>
+
+<p>
+	Há 2 tiyos de lista as listas ordenadas e as desordenadas:
+</p>
+
+<ol>
+	<li>Ponto 1</li>
+	<li>Ponto 2</li>
+	<li>Ponto 3</li>
+	<li>Ponto 4</li>
+	<li>Ponto 5</li>
+</ol>
+
+<ul>
+	<li>Ponto 1</li>
+	<li>Ponto 2</li>
+	<li>Ponto 3</li>
+	<li>Ponto 4</li>
+	<li>Ponto 5</li>
+</ul>
+
+<br>
+<!-- Imagens -->
+<img src="img.jpg" width="300" height="300" id="ancora">
+
+<!-- Videos internos e externos-->
+
+<!-- Para videos internos a systax é a mesma que nas imagens -->
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/D-XFw1t31rw?si=g0SjuQgXykSDbfPx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<!-- Maps -->
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3111.1051200744505!2d-9.164522223633904!3d38.76129290472274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1932e5b5aa2a9b%3A0xc4fe8035597d8f22!2sEst%C3%A1dio%20Jos%C3%A9%20Alvalade!5e0!3m2!1spt-PT!2spt!4v1705081165835!5m2!1spt-PT!2spt" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+<br>
+<p>
+	Elementos estruturais para conteudo:
+</p>
+<header>Cabeçalho -- header</header>
+<nav>Barra de navegação -- nav</nav>
+<main>Conteudos -- main</main>
+<footer>Rodapé -- footer</footer>
+<section>Secção -- section</section>
+<div>Divide texto -- div</div>
+
+<br>
+<p>
+	Tabelas	
+</p>
+
+<table border="2">
+	<tr>
+		<td>conteudos_1</td>
+		<td>conteudos_2</td>
+		<td>conteudos_3</td>
+		<td>Conteudo_4</td>
+	</tr>
+	<tr>
+		<td>conteudos_5</td>
+		<td>conteudos_6</td>
+		<td>conteudos_7</td>
+		<td>Conteudo_8</td>
+	</tr>
+	<tr>
+		<td>conteudos_9</td>
+		<td>conteudos_10</td>
+		<td>conteudos_11</td>
+		<td>Conteudo_12</td>
+	</tr>
+</table>
+
+<br>
+
+<p>
+	Há a possibilidade de colocar links internos e externos:
+</p>
+
+<a href="OLa.html">Link Interno</a>
+<br>
+<a href="https://www.sporting.pt/pt" target="_blank">Link Externo</a>
+
+<p>
+	Podemos adicionar um ponto de ancora para isso tenho:
+	1.Atribuit um id ao ponto que desejo
+	2.fazer o link com < aref = "#id">< link do ID ></ a>
+</p>
+
+<a href="#ancora"><img src="img.jpg" width="150" height="150"></a>
+<br><br><br>
+
+<p>
+	---Formulários---
+</p>
+<p>
+	Existe 2 tipos de formulario:
+</p>
+<p>
+	get --> tudo o que é enviado/escrito no formulário vai para o URL
+</p>
+<p>
+	post --> o que é enviado/escrito no formulário não vai para o URL
+</p>
+<p>
+	Podemos adicionar os inputs placeholder que é uma legenda em sublinhado no campo do nosso formulário mas também podemos usar o marcador label.
+</p>
+
+<br><br>
+
+<p>
+	Modo get
+</p>
+<form method="get">
+	<label for="Nome">Nome</label>
+	<input type="txt" name="Nome" placeholder="Nome">
+	<label for="Password">Password</label>
+	<input type="password" name="Password" placeholder="Password">
+	<input type="Submit" name="Enviar" value="Enviar"> 
+</form>
+<br>
+<p>
+	Modo post
+</p>
+<form method="post">
+	<label for="Nome">Nome</label>
+	<input type="txt" name="Nome" placeholder="Nome">
+	<label for="Password">Password</label>
+	<input type="password" name="Password" placeholder="Password">
+	<input type="Submit" name="Enviar" value="Enviar"> 
+</form>
+<br><br>
+<p>
+	Tipos de input:
+</p>
+<p>
+	--CheckBox--
+</p>
+<label>Varias opcções de escolha</label>
+<label>Python</label><input type="checkbox" name="Python" value="Python">
+<label>C</label><input type="checkbox" name="C" value="C">
+<label>JavaScript</label><input type="checkbox" name="JavaScript" value="JavaScript">
+<label>C++</label><input type="checkbox" name="C++" value="C++">
+
+<br><br>
+<p>
+	--Radio-- (Tem de estar agrupado no mesmo nome)
+</p>
+<label>Uma unica escolha</label>
+<label>Python</label><input type="radio" name="LP" value="Python">
+<label>C</label><input type="radio" name="LP" value="C">
+<label>JavaScript</label><input type="radio" name="LP" value="JavaScript">
+<label>C++</label><input type="radio" name="LP" value="C++">
+
+<br><br>
+<p>
+	--Date--
+</p>
+<label>Data Nascimento</label>
+	<input type="date" name="bd" placeholder="Data nascimento">
+<br>
+	<input type="datetime-local" name="bd" placeholder="Data">
+<br>
+	<input type="month" name="mes">
+<br>
+	<input type="week" name="semana">
+<br>	
+	<input type="time" name="horas">
+</bodyt>
+</html>
