@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
 
 :root{
-	--cor1: rgb(66, 70, 81); /*Cinzento*/
-	--cor2: rgba(39,198,230,90);
-	--cor3: rgb(58,80,107);
-	--cor4: rgb(235,94,85);
+	--cor1: rgb(51, 51, 51); /*Cinzento*/
+	--cor2: rgb(130,192,204);
+	--cor3: rgb(234,186,59);
+	--cor4: rgb(17,102,102);
 	--cor5: rgb(216,30,91);
 	--cor6: rgb(255,255,255);
 	--cor7: rgb(0,0,0);
@@ -53,45 +53,6 @@ header{
     vertical-align: 20%;
 }
 
-.sec_1{
-	height: 290vh;
-}
-
-.sec_2{
-	height: 290vh;
-}
-
-.sec_3{
-	height: 290vh;
-}
-
-.sec_4{
-	height: 290vh;
-}
-
-.sec_5{
-	height: 290vh;
-}
-
-.sec_6{
-	height: 290vh;
-}
-
-.sec_6{
-	height: 290vh;
-}
-
-.sec_7{
-	height: 290vh;
-}
-
-.sec_8{
-	height: 290vh;
-}
-
-.sec_9{
-	height: 290vh;
-}
 #retangulo form{
 	width: 100%;
 	height: 100%;
@@ -117,28 +78,218 @@ header{
 
 .background{
 	background-image: url(./resources/images/CoverStory_robots.jpeg);
-	padding: 25% 0% 25% 0%;
+	height: 100%;
+	width: 50%;
 	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 25%;
+
 }
 
 .retangulo{
-	border-left: 15px solid green;
-  	height: 200px;
-  	position: relative;
-  	bottom: 100px;
+	border-left: 12px;
+	background-color: var(--cor2);
+  	height: 135px;
+  	width: 15px;
+  	margin-top: 155px;
 
 }
 
 .texto{
 	background-color: black;
-	width:100%;
-	padding: 25% 0% 25% 0%;
+	width: 50%;
+	height: 500px;
 }
 .texto h1{
 	color: white;
-	font-size: 7rem;
+	width: 75%;
+	font-size: 5rem;
 	margin: 0;
 	text-align: top;
-	top: 100px;
+	top: 75px;
+}
 
+.sec_1 p{
+	color: #fff;
+	font-size: 25px;
+}
+
+.sec_2{
+	margin-top: 100px;
+	margin-right: 150px;
+  	margin-left: 150px;
+	height: 500px;
+	text-align: left;
+}
+.imagem1{
+	background-image: url("./resources/images/hand.jpg");
+	background-size: cover;
+	height: 100%;
+	width: 100%;
+	padding: 20%;
+}
+
+.sec_2 h1{
+	font-size: 5rem;
+	margin: 5% 0%;
+}
+
+.sec_2 h2{
+	margin-top: 5%;
+}
+
+.sec_2 p{
+	width: 95%;
+	vertical-align: top;
+}
+
+.sec3L{
+	background-color: var(--cor1);
+	
+}
+
+.sec_3imgsL{
+	height: 150px;
+	width: 75%;
+	display: inline-block;
+	margin-bottom: 15%;
+	margin-left: 35.5%;
+	font-size: 0;
+
+}
+
+.sec3R{
+	background-color: var(--cor2);
+	padding-top: 47.16%;
+}
+
+.sec_3imgsR{
+	height: 150px;
+  	width: 100%;
+  	display: inline-block;
+  	margin-bottom: 15%;
+  	margin-left: 0;
+  	font-size: 0;
+}
+
+.top-area{
+	background-color: var(--cor3);
+  	text-align: center;
+  	width: 100%;
+  	padding: 10% 0% 10% 0%;
+ 	font-size: 30px;
+	
+}	
+
+.texto4{
+	background-color: var(--cor2);
+	text-align: justify;
+  	font-size: 21px;
+}
+
+.imagem4{
+  	background-size: cover;
+}
+
+.button4{
+    background-color: var(--cor2);
+    color: #fff;
+	padding: 10px 20px;
+    margin: 5%;
+    border: none;
+    background-color: var(--cor2);
+	width: 200px;    
+}
+
+.sec_5{
+	background-color: var(--cor1);
+	padding: 5%;
+}
+
+.robbot p{
+	width: 100%;
+}
+
+.container{
+	max-width: 100%;
+	margin: 0 auto;
+	justify-content: center;
+}
+
+.sec_6Top{
+	text-align: center;
+	max-width: 55%;
+	margin: 0 auto;
+}
+
+.sec_6Top h2{
+	font-size: 3rem;
+	color: var(--cor3);
+}
+.container .sec_6Bot{
+	display: flex;
+	justify-content: center;
+	margin: 5% 10% 5% 10%;
+}
+
+.sec_7 .background_7{
+	background-color: black; 
+	background-size: cover;
+	padding: 1%;
+
+}
+
+.retangulo_7{
+	background-color: var(--cor3);
+	height: 7rem;
+ 	width: 1%;
+ 	margin: 3% 0% 5% 10%;
+}
+
+.text7 h1{
+	color: var(--cor3);
+	font-size: 5rem;
+	margin: 0;
+}
+
+.text7 p{
+	color: #fff;
+	width: 100%;
+}
+
+.text7{
+	margin: 1% 10% 0% 3%;
+}
+
+.sec_7 .container{
+	display: flex;
+	justify-content: center;
+}
+
+.sec_8 .background8{
+	background-color: var(--cor4);
+	padding: 5% 10% 2% 10%;
+	background-size: cover;
+}
+
+.sec_8 .container{
+	display: flex;
+	justify-content: center;
+	max-width: 0 auto;
+	font-size: 0;
+}
+
+.txt8{
+	background-color: var(--cor2);
+	padding: 5% 10% 5% 5%;
+	width: 30%;
+}
+.txt8 h2{
+	font-size: 2rem;
+	width: 100%;
+}
+.txt8 p{
+	font-size: 1rem;
+	width: 100%;
+	margin-top: 20%;
 }
