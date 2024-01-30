@@ -3,9 +3,9 @@
 :root{
 	--cor1: rgb(51, 51, 51); /*Cinzento*/
 	--cor2: rgb(130,192,204);
-	--cor3: rgb(234,186,59);
+	--cor3: rgb(235, 188, 112);
 	--cor4: rgb(17,102,102);
-	--cor5: rgb(216,30,91);
+	--cor5: rgb(22,105,122);
 	--cor6: rgb(255,255,255);
 	--cor7: rgb(0,0,0);
 }
@@ -29,7 +29,7 @@
 .col-11{width: 91.66%; }
 .col-12{width: 100%; }
 
-.txt-right{ text-align: right;}
+.txt-right{ text-align: right; padding-bottom: 1%;}
 .txt-center{ text-align: center; }
 .txt-left{ text-align:left;}
 
@@ -87,11 +87,12 @@ header{
 }
 
 .retangulo{
-	border-left: 12px;
+	border-left: 1rem;
 	background-color: var(--cor2);
-  	height: 135px;
-  	width: 15px;
-  	margin-top: 155px;
+	height: 10rem;
+	width: 1.5%;
+	margin-top: 20%;
+	margin-bottom: 2%;
 
 }
 
@@ -103,7 +104,7 @@ header{
 .texto h1{
 	color: white;
 	width: 75%;
-	font-size: 5rem;
+	font-size: 6rem;
 	margin: 0;
 	text-align: top;
 	top: 75px;
@@ -111,15 +112,12 @@ header{
 
 .sec_1 p{
 	color: #fff;
-	font-size: 25px;
+	font-size: 2rem;
 }
 
 .sec_2{
-	margin-top: 100px;
-	margin-right: 150px;
-  	margin-left: 150px;
-	height: 500px;
 	text-align: left;
+	margin: 5% 10% 10% 10%;
 }
 .imagem1{
 	background-image: url("./resources/images/hand.jpg");
@@ -149,18 +147,17 @@ header{
 }
 
 .sec_3imgsL{
-	height: 150px;
+	height: 9.5rem;
 	width: 75%;
 	display: inline-block;
-	margin-bottom: 15%;
-	margin-left: 35.5%;
 	font-size: 0;
+	margin: 8.3% 0% 0% 47.6%;
 
 }
 
 .sec3R{
 	background-color: var(--cor2);
-	padding-top: 47.16%;
+	padding: 47.08% 0% 7% 0%
 }
 
 .sec_3imgsR{
@@ -241,21 +238,25 @@ header{
 
 .retangulo_7{
 	background-color: var(--cor3);
-	height: 7rem;
+	height: 9rem;
  	width: 1%;
  	margin: 3% 0% 5% 10%;
 }
 
 .text7 h1{
 	color: var(--cor3);
-	font-size: 5rem;
+	font-size: 6rem;
 	margin: 0;
 }
 
 .text7 p{
 	color: #fff;
 	width: 100%;
+	font-size: 1.4rem;
+	text-align: left;
+	margin-top: 2%;
 }
+
 
 .text7{
 	margin: 1% 10% 0% 3%;
@@ -267,7 +268,7 @@ header{
 }
 
 .sec_8 .background8{
-	background-color: var(--cor4);
+	background-color: var(--cor5);
 	padding: 5% 10% 2% 10%;
 	background-size: cover;
 }
@@ -281,15 +282,98 @@ header{
 
 .txt8{
 	background-color: var(--cor2);
-	padding: 5% 10% 5% 5%;
-	width: 30%;
+	padding: 5% 10% 15% 5%;
+	width: 20%	;
 }
 .txt8 h2{
-	font-size: 2rem;
+	font-size: 4rem;
 	width: 100%;
 }
 .txt8 p{
-	font-size: 1rem;
+	font-size: 1.5rem;
 	width: 100%;
+	margin: 20% 0% 0% 0%;
+	text-indent: 0%;
+}
+
+.txt8 button{
+	padding: 3% 6% 3% 6%;
+	background-color: var(--cor5);
+	width: 35%;
+	border: none;
 	margin-top: 20%;
+}
+
+.background9{
+	background-color: #fff;
+	padding: 20%;
+	background-size: cover;
+}
+
+.sec_9 .container{
+	display: flex;
+	justify-content: center;
+	max-width: 0% auto;
+	margin: 0;
+	vertical-align: top;
+}
+
+.img9{
+	width: 50%;
+	margin: 2% 0% 2% 10%;
+}
+
+.txt9{
+	width: 50%;
+	margin: 10% 10% 15% 1%;
+}
+
+.txt9 h3{
+	font-size: 3rem;
+  	margin: 0;
+}
+
+.txt9 h2{
+	font-size: 5.5rem;
+  	margin: 5% 0%;
+}
+
+.txt9 p{
+	font-size: 1.5rem;
+  	width: 93%;
+}
+
+.sec_9 button{
+	padding: 3% 5% 3% 5%;
+	background-color: var(--cor2);
+	width: 20%;
+	border: none;
+	margin-top: 15%;
+}
+
+.backgroundF{
+	background-color: var(--cor5);
+	background-size: cover;
+	padding: 1%;
+	margin: 0;
+}
+
+.txtf .container{
+	justify-content: center;
+	display: flex;
+	margin: 0 auto;
+}
+.txtf{
+	width: 50%;
+	text-align: center;
+	font-size: 1.5rem;
+	margin-left: 25%;
+	color: #fff;
+}
+
+.iconsF{
+	width: 50%;
+  	text-align: center;
+  	font-size: 1.5rem;
+  	margin-left: 25%;
 }
