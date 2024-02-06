@@ -41,21 +41,20 @@ header{
 }
 
 #retangulo{
-	padding:1%;
-	width: 30px; 
-    height: 30px; 
-    background-color: #fff; 
-    color: black; 
-    text-align: left;
-    border-width: 1px;
-    border-style: solid; 
-    border-color: black;
-    vertical-align: 20%;
+	padding: 1.15% 0% 0% 1%;
+	width: 25%;
+	height: 1%;
+	background-color: #fff;
+	color: black;
+	text-align: left;
+	border-width: 00.1rem;
+	border-style: solid;
+	border-color: black;
 }
 
 #retangulo form{
 	width: 100%;
-	height: 100%;
+	height: 2rem;
 }
 
 #retangulo input{
@@ -173,7 +172,7 @@ header{
 	background-color: var(--cor3);
   	text-align: center;
   	width: 100%;
-  	padding: 10% 0% 10% 0%;
+  	padding: 15% 0% 15% 0%;
  	font-size: 30px;
 	
 }	
@@ -181,7 +180,8 @@ header{
 .texto4{
 	background-color: var(--cor2);
 	text-align: justify;
-  	font-size: 21px;
+	font-size: 1%;
+	line-height: 1.7;
 }
 
 .imagem4{
@@ -189,13 +189,14 @@ header{
 }
 
 .button4{
-    background-color: var(--cor2);
-    color: #fff;
-	padding: 10px 20px;
-    margin: 5%;
-    border: none;
-    background-color: var(--cor2);
-	width: 200px;    
+background-color: var(--cor2);
+  color: #fff;
+  padding: 3% 0% 3% 0%;
+  border: none;
+  background-color: var(--cor2);
+  width: 35%;
+  margin: 5% 25% 0% 25%;
+   
 }
 
 .sec_5{
@@ -273,35 +274,37 @@ header{
 	background-size: cover;
 }
 
-.sec_8 .container{
-	display: flex;
-	justify-content: center;
-	max-width: 0 auto;
-	font-size: 0;
+.Background2{
+	background-color: var(--cor2);
 }
 
+.img8{
+	background-image: url(./resources/images/foto6.png);
+	background-size: cover;
+}
 .txt8{
 	background-color: var(--cor2);
-	padding: 5% 10% 15% 5%;
-	width: 20%	;
+
 }
-.txt8 h2{
-	font-size: 4rem;
-	width: 100%;
+.txt8 h1{
+	font-size: 3.5rem;
+	width: 70%;
+	margin: 20% 5% 5% 15%;
 }
 .txt8 p{
 	font-size: 1.5rem;
-	width: 100%;
-	margin: 20% 0% 0% 0%;
-	text-indent: 0%;
+	width: 75%;
+	margin: 10% 5% 0% 15%;
+	line-height: 1.5;
 }
 
 .txt8 button{
-	padding: 3% 6% 3% 6%;
+	padding: 2% 6% 2% 6%;
 	background-color: var(--cor5);
-	width: 35%;
+	width: 25%;
 	border: none;
 	margin-top: 20%;
+	margin: 20% 0% 30% 15%;
 }
 
 .background9{
@@ -373,7 +376,7 @@ header{
 
 .iconsF{
 	width: 50%;
-  	text-align: center;
-  	font-size: 1.5rem;
-  	margin-left: 25%;
+	text-align: center;
+	font-size: 1.5rem;
+	margin: 5% 25% 2% 25%;
 }
