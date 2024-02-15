@@ -1693,6 +1693,8 @@ section {
   border-radius: 50px;
   text-align: left;
   border: 1px solid #bfdcf7;
+  border: 1px solid;
+  color: var(--cor1);
 }
 
 #footer .footer-newsletter form input[type="email"] {
