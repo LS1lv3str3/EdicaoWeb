@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 :root{
 	--cor1: rgb(0, 0, 0); /*Preto*/
 	--cor2: rgb(255,255,255);
@@ -48,39 +51,32 @@ header{
 	
 }
 
-.logotipo{
-	width: 5%;
-	margin-left: 5%;
-}
 
 .logotipo img{
-	width: 100%;
+	width: 10%;
 	height: auto;
-	display: block;
+	margin-left: 2%;
+
 }
 
-.socialMedia{
-	justify-content: center;
+#socialMedia{
 	text-align: center;
-	margin: 1% auto 0 auto;
-	display: inline;
-	width: 50%;
+	vertical-align: middle;
 }
 
-.socialMedia ul li{
-	list-style: none;
-	display: inline;
-	margin-left: 10%;
-	
+#socialMedia ul{
+	padding: 0;
+	margin:0;
 }
 
-
-.socialMedia i{
+#socialMedia i{
 	color: #fff;
+	margin-right: 20%;
 }
 
 .conta{
 	margin-top: 1%;
+	vertical-align: middle;
 }
 header .conta a{
 	color: #fff;
@@ -96,7 +92,9 @@ header .conta a{
 
 .navBar{
 	text-align: center;
-	margin: 1% 0 0 0;
+	padding: 2% 0 2% 0;
+	font-family: Poppins;
+	margin: 0;
 }
 
 .navBar li{
@@ -114,4 +112,119 @@ header .conta a{
 	font-size: 1.5rem;
 }
 
+/* ---- Section 1 -----*/
+#banner{
+	text-align: center;
+	background-color:  rgba(113,194,115, 0.1);
+}
 
+#banner h1:first-child{
+	font-size: 18rem;
+	margin: 0% 0 0 0;
+	color: var(--cor3);
+}
+
+#banner h1:last-child{
+	font-size: 35rem;
+	margin: 0% 0 0 0;
+	color: var(--cor5);
+}
+#banner .mudacor1{
+	animation: colorChangeAnimation 5s infinite;
+}
+
+@keyframes colorChangeAnimation {
+	0% {
+		color: var(--cor3);
+	}
+	50% {
+		color: var(--cor4);
+	}
+	75%{
+		color: var(--cor5);
+	}
+	100% {
+		color: var(--cor6);
+	}
+}
+
+#banner .mudacor2{
+	animation: colorChangeAnimation 3s infinite;
+}
+
+@keyframes colorChangeAnimation {
+	0% {
+		color: var(--cor7);
+	}
+	50% {
+		color: var(--cor6);
+	}
+	75%{
+		color: var(--cor4);
+	}
+	100% {
+		color: var(--cor3);
+	}
+}
+
+#banner h1{
+	font-family: "Press Start 2P";
+}
+
+/* ---- Section 2 -----*/
+
+.areatext {
+	font-family: "Press Start 2P";
+}
+
+.sec_2 .row{
+	background-color: var(--cor3);
+	padding: 2% 0 2% 0;
+}
+
+.areatext h1{
+	font-size: 6rem;
+	margin: 0 0 0 5%;
+	color: var(--cor6);
+}
+
+.areatext h2{
+	font-size: 6rem;
+	margin: 0 0 0 25%;
+	color: var(--cor2);
+}
+
+.areatext h3{
+	font-size: 8rem;
+	margin: 0 0 0 45%;
+	color: var(--cor6);
+}
+
+.areaIcon{
+	text-align: center;
+	vertical-align: middle;
+	font-size: 10rem;
+	color: var(--cor2);
+}
+
+.btnRegister{
+	vertical-align: middle;
+	text-align: center;
+}
+
+.btnRegister a{
+	background-color: var(--cor6);
+	color: white;
+	padding: 5% 10% 5% 10%;
+	border-radius: 30px;
+	font-size: 3rem;
+	font-family: Poppins;
+}
+
+.btnRegister a:hover{
+	background-color: var(--cor5);
+}
+
+.ps5Logo{
+	background-color: blue;
+}
