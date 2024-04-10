@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/fontawesome/css/all.css">
     <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/mediaQuery.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <title>HomePage</title>
 </head>
 <body>
@@ -15,29 +18,40 @@
                     <img src="/Imgs/Logotipo_GameOn.png" alt="">
                 </a>
             </div>
-            <div class="col col-4" id="socialMedia">
+            <div class="col col-4" id="navBar">
+                <nav>
+                    <ul class="navBar">
+                        <li><a href="/homePage.html"><i class="fa-sharp fa-solid fa-house fa-sm"></i>Home</a></li>
+                        <li><a href="/sobre.html"><i class="fa-solid fa-circle-info"></i>Sobre</a></li>
+                        <li><a href="/categorias.html"><i class="fa-solid fa-list"></i>Categorias</a></li>
+                        <li><a href="/categorias.html"><i class="fa-solid fa-gamepad"></i>Produtos</a></li>
+                        <li><a href="#contactos"><i class="fa-solid fa-phone"></i>Contactos</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col col-4 conta" id="socialMedia">
                 <ul>
                     <a href="#"><i class="fa-brands fa-square-facebook fa-xl"></i></a>
                     <a href="#"><i class="fa-brands fa-x-twitter fa-xl"></i></a>
                     <a href="#"><i class="fa-brands fa-instagram fa-xl"></i></a>
-                </ul>
-            </div>
-            <div class="col col-4 conta">
-                <ul>
-                    <a href="#categorias"><i class="fa-solid fa-user fa-xl"></i></a>
+                    <a href="/register.html"><i class="fa-solid fa-user fa-xl iC" id="socialMedia"></i></a>
+                    <i class="fas fa-bars" id="burguer"></i>
+                    
                 </ul>
             </div>
         </div>
     </header>
-    <nav>
-        <ul class="navBar">
-            <li><a href="/homePage.html"><i class="fa-sharp fa-solid fa-house fa-sm"></i>Home</a></li>
-            <li><a href="/sobre.html">Sobre</a></li>
-            <li><a href="/categorias.html">Categorias</a></li>
-            <li><a href="/categorias.html">Produtos</a></li>
+    <div id="elemento">
+        <ul>
+            <li><a href="/index.html">Home</a><i class="fa-sharp fa-solid fa-house fa-sm"></i></li>
+            <li><a href="/sobre.html">Sobre</a><i class="fa-solid fa-circle-info"></i></li>
+            <li><a href="/categorias.html">Categorias</a><i class="fa-solid fa-list"></i></li>
+            <li><a href="/produtos.html">Produtos</a><i class="fa-solid fa-gamepad"></i></li>
+            <li><a href="/#contactos">Contactos</a><i class="fa-solid fa-phone"></i></li>
+            <li><a href="/register.html">Conta</a><i class="fa-solid fa-user fa-xl"></i></li>
         </ul>
-    </nav>
-
+    </div>
+    
     <section class="sec_1">
         <div class="row">
             <div id="banner">
@@ -56,6 +70,9 @@
             <div class="col col-2 areaIcon">
                 <i class="fa-solid fa-arrow-right"></i>
             </div>
+            <div class="col col-2 areaIcon2">
+                <i class="fa-solid fa-arrow-down"></i>
+            </div>
             <div class="col col-5 btnRegister">
                 <a href="register.html">Registar</a>
             </div>
@@ -64,23 +81,172 @@
     <section class="sec_3">
         <div class="row">
             <div class="col col-4 ps5Logo">
-                <svg class="ps5Csv" xmlns="http://www.w3.org/2000/svg" height="400" width="600" viewBox="-129.7608 -49.0725 1124.5936 294.435"><g fill="#FFF" fill-rule="evenodd"><path fill-rule="nonzero" d="M595.438 39.543c-22.978 0-34.2 14.12-34.2 32.369v50.777c0 11.331-7.612 21.374-19.012 21.374h-59.402a.85.85 0 00-.852.848v11.19a.85.85 0 00.852.846h70.032c22.978 0 34.236-12.12 34.236-30.333V71.912c0-11.366 8.296-19.52 19.696-19.52h59.74a.85.85 0 00.852-.847V40.39a.85.85 0 00-.853-.847zM455.987 39h-138.1a.85.85 0 00-.85.847V52.04c.018.474.41.848.886.848h129.48c6.697 0 16.779 5.44 16.779 18.49 0 13.05-11.17 18.526-16.78 18.526h-101.42c-16.53 0-28.981 14.806-28.981 33.131v33.521a.81.81 0 00.238.61.818.818 0 00.613.238h24.229a.85.85 0 00.85-.848V123c0-11.334 8.57-20 17.971-20l95.014.721c22.952 0 34.161-14.123 34.161-32.343 0-18.22-11.21-32.378-34.16-32.378M94.098 0v183.128l41.515 13.162V42.678c0-7.095 3.2-11.991 8.389-10.324 6.789 1.88 8.104 8.515 8.104 15.68v61.34c25.876 12.487 46.207 0 46.207-32.923.036-33.773-11.872-48.744-46.918-60.7A506.379 506.379 0 0094.098 0z"/><path fill-rule="nonzero" d="M144.688 169.117l66.851-23.922c7.578-2.714 8.752-6.606 2.597-8.605a45.172 45.172 0 00-24.904 1.285l-44.544 15.71v-24.993l2.561-.857a153.401 153.401 0 0130.989-6.642 132.37 132.37 0 0157.636 6.892c19.604 6.248 21.81 15.389 16.829 21.709-4.981 6.32-17.184 10.711-17.184 10.711l-90.831 32.85zM19.01 167.111c-20.005-5.679-23.327-17.5-14.137-24.358a98.525 98.525 0 0122.762-11.037l59.203-21.43v24.216l-42.414 15.43c-7.529 2.714-8.66 6.571-2.58 8.607a44.549 44.549 0 0024.741-1.286l20.43-7.5v21.894l-4.065.643a132.354 132.354 0 01-63.621-5.179"/><path d="M693.19 39.543h165.629c.787 0 1.181.305 1.181.915V51.8c0 .551-.394.8-1.181.749-92.748-.007-139.506-.007-140.274 0-.768.007-1.248.267-1.44.78v27.403c0 2.045 1.753 8.638 8.47 8.638h105.299c12.86 0 34.198 8.961 34.198 33.742 0 24.78-22.373 33.977-31.482 33.977h-140.4c-.69 0-1.018-.111-1.018-.947s-.044-10.678 0-11.204c.045-.526.219-.815 1.017-.82.799-.006 116.613 0 123.891 0 7.279 0 22.051-5.542 22.051-21.006 0-15.465-15.202-20.112-19.073-20.112h-111.23c-2.245 0-7.673-.811-11.853-5.62-4.18-4.81-4.803-7.54-4.803-14.004V40.458c0-.61.34-.915 1.017-.915z"/></g></svg>            
+                <a href="/prod_ps5 copy.html">
+                    <svg class="ps5svg" xmlns="http://www.w3.org/2000/svg" height="400" width="600" viewBox="-129.7608 -49.0725 1124.5936 294.435"><g fill="#FFF" fill-rule="evenodd"><path fill-rule="nonzero" d="M595.438 39.543c-22.978 0-34.2 14.12-34.2 32.369v50.777c0 11.331-7.612 21.374-19.012 21.374h-59.402a.85.85 0 00-.852.848v11.19a.85.85 0 00.852.846h70.032c22.978 0 34.236-12.12 34.236-30.333V71.912c0-11.366 8.296-19.52 19.696-19.52h59.74a.85.85 0 00.852-.847V40.39a.85.85 0 00-.853-.847zM455.987 39h-138.1a.85.85 0 00-.85.847V52.04c.018.474.41.848.886.848h129.48c6.697 0 16.779 5.44 16.779 18.49 0 13.05-11.17 18.526-16.78 18.526h-101.42c-16.53 0-28.981 14.806-28.981 33.131v33.521a.81.81 0 00.238.61.818.818 0 00.613.238h24.229a.85.85 0 00.85-.848V123c0-11.334 8.57-20 17.971-20l95.014.721c22.952 0 34.161-14.123 34.161-32.343 0-18.22-11.21-32.378-34.16-32.378M94.098 0v183.128l41.515 13.162V42.678c0-7.095 3.2-11.991 8.389-10.324 6.789 1.88 8.104 8.515 8.104 15.68v61.34c25.876 12.487 46.207 0 46.207-32.923.036-33.773-11.872-48.744-46.918-60.7A506.379 506.379 0 0094.098 0z"/><path fill-rule="nonzero" d="M144.688 169.117l66.851-23.922c7.578-2.714 8.752-6.606 2.597-8.605a45.172 45.172 0 00-24.904 1.285l-44.544 15.71v-24.993l2.561-.857a153.401 153.401 0 0130.989-6.642 132.37 132.37 0 0157.636 6.892c19.604 6.248 21.81 15.389 16.829 21.709-4.981 6.32-17.184 10.711-17.184 10.711l-90.831 32.85zM19.01 167.111c-20.005-5.679-23.327-17.5-14.137-24.358a98.525 98.525 0 0122.762-11.037l59.203-21.43v24.216l-42.414 15.43c-7.529 2.714-8.66 6.571-2.58 8.607a44.549 44.549 0 0024.741-1.286l20.43-7.5v21.894l-4.065.643a132.354 132.354 0 01-63.621-5.179"/><path d="M693.19 39.543h165.629c.787 0 1.181.305 1.181.915V51.8c0 .551-.394.8-1.181.749-92.748-.007-139.506-.007-140.274 0-.768.007-1.248.267-1.44.78v27.403c0 2.045 1.753 8.638 8.47 8.638h105.299c12.86 0 34.198 8.961 34.198 33.742 0 24.78-22.373 33.977-31.482 33.977h-140.4c-.69 0-1.018-.111-1.018-.947s-.044-10.678 0-11.204c.045-.526.219-.815 1.017-.82.799-.006 116.613 0 123.891 0 7.279 0 22.051-5.542 22.051-21.006 0-15.465-15.202-20.112-19.073-20.112h-111.23c-2.245 0-7.673-.811-11.853-5.62-4.18-4.81-4.803-7.54-4.803-14.004V40.458c0-.61.34-.915 1.017-.915z"/></g></svg>            
+                </a>    
             </div>
-            <div class="col col-4">
-
+            <div class="col col-4 nitendoLogo">
+                <a href="/prod_nitendo.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="400" width="600" version="1.1" id="svg8" viewBox="-90 -50 780 300"><g id="layer1" transform="translate(0 -626.5)"><path id="rect80" opacity="1" vector-effect="none" fill="#e60012" fill-opacity="1" fill-rule="nonzero" stroke="none" stroke-width="15" stroke-miterlimit="4" stroke-dasharray="none" paint-order="stroke markers fill" d="M0 626.5h600v200H0z"/><path id="path29" d="M110.966 789.567C70.823 789.553 44 761.105 44 726.612c0-34.492 26.884-63.267 66.905-63.179h378.19c40.02-.088 66.905 28.687 66.905 63.18 0 34.492-26.823 62.94-66.966 62.954zm.123-110.618c-31.78.061-51.287 21.302-51.287 47.582 0 26.272 19.384 47.69 51.287 47.574H488.91c31.903.11 51.294-21.302 51.294-47.574 0-26.273-19.507-47.514-51.287-47.575zm398.145 22.18c2.89 0 4.325.979 4.325 2.916 0 1.333-.83 2.34-2.21 2.686l2.264 4.522h-2.74l-1.938-4.148h-1.203v4.148h-2.468v-10.124zm-.224-3.958c-5.045 0-9.138 4.094-9.138 9.139 0 5.045 4.093 9.138 9.138 9.138s9.138-4.093 9.138-9.138-4.093-9.139-9.138-9.139zm7.39 9.145c0 4.08-3.31 7.391-7.39 7.391a7.394 7.394 0 01-7.39-7.39c0-4.08 3.31-7.391 7.39-7.391a7.39 7.39 0 017.39 7.39zm-8.668-.693h1.203c1.408 0 2.088-.428 2.088-1.435 0-1.054-.728-1.51-2.21-1.51h-1.081zm-206.535 24.742c-.028-3.46.047-5.772 1.183-7.744 1.394-2.434 3.957-3.59 6.282-3.604h-.007c2.326.014 4.889 1.17 6.283 3.604 1.135 1.979 1.183 4.29 1.156 7.751zm14.836 11.906s.013.177.013 2.393c0 7.221-4.752 8.826-7.39 8.826-2.639 0-7.473-1.605-7.473-8.826 0-2.162.014-8.152.014-8.152s33.636.014 33.636-.007c0-12.245-11.824-22.39-26.347-22.39-14.524 0-26.293 9.927-26.293 22.172 0 12.246 11.77 22.166 26.293 22.166 12.048 0 22.226-6.874 25.334-16.196zm56.182-27.496c6.677-.19 20.221 4.181 20.126 19.813-.013 2.774-.007 21.486-.007 21.486h-17.74V730.14c0-3.44-3.29-7.268-8.158-7.268-4.862 0-8.48 3.828-8.48 7.268 0 1.686.021 25.933.021 25.933h-17.725l.013-39.484 17.72-.013s-.021 3.175 0 4.154c3.412-3.257 8.335-5.786 14.23-5.956zm-145.11 0c6.677-.19 20.22 4.181 20.126 19.813-.014 2.774-.007 21.486-.007 21.486h-17.74V730.14c0-3.44-3.29-7.268-8.159-7.268-4.861 0-8.478 3.828-8.478 7.268 0 1.686.02 25.933.02 25.933H195.14l-.007-39.484 17.74-.013s-.02 3.175 0 4.154c3.413-3.257 8.329-5.786 14.23-5.956zm203.72-18.066h17.624v59.378h-17.651s-.007-1.917-.007-2.284c-6.833 4.29-14.544 4.283-20.548 1.482-1.611-.748-12.211-5.834-12.211-19.575 0-10.424 9.832-21.806 22.703-20.677 4.236.374 7.248 1.918 10.104 3.522-.014-9.138-.014-21.846-.014-21.846zm.13 39.436v-7.058c0-6.106-4.216-7.663-6.99-7.663-2.842 0-7.004 1.557-7.004 7.663 0 2.026.007 7.037.007 7.037s-.007 4.923-.007 7.024c0 6.1 4.162 7.697 6.997 7.697 2.78 0 7.003-1.598 7.003-7.697 0-2.536-.007-7.003-.007-7.003zm56.576-.116s-.007 5.97-.007 8.363c0 6.297-3.72 8.894-7.295 8.894-3.584 0-7.317-2.597-7.317-8.894 0-2.393.007-8.512.007-8.512s.014-5.84.014-8.234c0-6.27 3.74-8.846 7.296-8.846 3.563 0 7.295 2.577 7.295 8.846 0 2.393-.007 6.82.014 8.404zm-7.173-22.125c-14.415 0-26.096 9.927-26.096 22.173 0 12.245 11.688 22.172 26.096 22.172 14.414 0 26.096-9.927 26.096-22.172 0-12.246-11.682-22.173-26.096-22.173zm-312.95-5.072v-12.137h17.895v12.137zm.04 47.255v-39.49l17.855.007v39.483zm89.58 0l.008-39.408h-9.71v-5.861l9.716-.007-.013-7.996h17.868v7.989h9.669v5.874h-9.669l.014 39.409zm-162.244 0l.007-59.378h18.5l25.593 41.408-.014-41.408h18.359v59.378h-18.331l-25.729-41.407v41.407z" fill="#fff" stroke-width="1"/></g><style id="style7" type="text/css"/></svg>            </div>
+                </a>
+                <div class="col col-4 steamLogo">
+                <a href="/prod_steam.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="400" width="600" viewBox="-34.92765 -58.25 302.7063 349.5"><defs><linearGradient gradientUnits="userSpaceOnUse" y1="0" gradientTransform="matrix(.99946 0 0 1.00054 -.15 0)" y2="232.875" x1="116.689" x2="116.689" id="a"><stop offset="0" stop-color="#111D2E"/><stop offset=".212" stop-color="#051839"/><stop offset=".407" stop-color="#0A1B48"/><stop offset=".581" stop-color="#132E62"/><stop offset=".738" stop-color="#144B7E"/><stop offset=".873" stop-color="#136497"/><stop offset="1" stop-color="#1387B8"/></linearGradient></defs><path d="M4.741 150.01C19.134 198.02 63.657 233 116.351 233c64.34 0 116.5-52.16 116.5-116.5 0-64.341-52.16-116.5-116.5-116.5C54.611 0 4.091 48.029.101 108.76c7.54 12.66 10.481 20.49 4.641 41.25z" fill="url(#a)"/><path d="M110.35 87.322c0 .196 0 .392.01.576L81.852 129.31c-4.618-.21-9.252.6-13.646 2.41a31.698 31.698 0 00-5.455 2.88L.152 108.83s-1.448 23.83 4.588 41.59l44.254 18.26c2.222 9.93 9.034 18.64 19.084 22.83 16.443 6.87 35.402-.96 42.242-17.41 1.78-4.3 2.61-8.81 2.49-13.31l40.79-29.15c.33.01.67.02 1 .02 24.41 0 44.25-19.9 44.25-44.338C198.85 62.882 179.01 43 154.6 43c-24.4 0-44.25 19.882-44.25 44.322zm-6.84 83.918c-5.294 12.71-19.9 18.74-32.596 13.45-5.857-2.44-10.279-6.91-12.83-12.24l14.405 5.97c9.363 3.9 20.105-.54 23.997-9.9 3.904-9.37-.525-20.13-9.883-24.03l-14.89-6.17c5.745-2.18 12.277-2.26 18.38.28 6.153 2.56 10.927 7.38 13.457 13.54 2.53 6.16 2.52 12.96-.04 19.1m51.09-54.38c-16.25 0-29.48-13.25-29.48-29.538 0-16.275 13.23-29.529 29.48-29.529 16.26 0 29.49 13.254 29.49 29.529 0 16.288-13.23 29.538-29.49 29.538m-22.09-29.583c0-12.253 9.92-22.191 22.14-22.191 12.23 0 22.15 9.938 22.15 22.191 0 12.254-9.92 22.183-22.15 22.183-12.22 0-22.14-9.929-22.14-22.183z" fill="#fff"/></svg>
+                </a>
             </div>
-            <div class="col col-4">
-
-            </div>
-
         </div>
     </section>
     <section class="sec_4">
-
+        <div class="row">
+            <div class="col col-3 produtos">
+                <img src="/Imgs/fc24.png" alt="">
+                <div class="porduto_caract">
+                    <div class="row">
+                        <div class="col col-6">
+                            <p>59.99€</p>
+                        </div>
+                        <div class="col col-6">
+                            <button class="btn produto">Ver mais</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-3 produtos">
+                <img src="/Imgs/fc24.png" alt="">
+                <div class="porduto_caract">
+                    <div class="row">
+                        <div class="col col-6">
+                            <p>59.99€</p>
+                        </div>
+                        <div class="col col-6">
+                            <button class="btn produto">Ver mais</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-3 produtos">
+                <img src="/Imgs/fc24.png" alt="">
+                <div class="porduto_caract">
+                    <div class="row">
+                        <div class="col col-6">
+                            <p>59.99€</p>
+                        </div>
+                        <div class="col col-6">
+                            <button class="btn produto">Ver mais</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-3 produtos">
+                <img src="/Imgs/fc24.png" alt="">
+                <div class="porduto_caract">
+                    <div class="row">
+                        <div class="col col-6">
+                            <p>59.99€</p>
+                        </div>
+                        <div class="col col-6">
+                            <button class="btn produto">Ver mais</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="row">
+            <div class="col col-3 produtos">
+                <img src="/Imgs/fc24.png" alt="">
+                <div class="porduto_caract">
+                    <div class="row">
+                        <div class="col col-6">
+                            <p>59.99€</p>
+                        </div>
+                        <div class="col col-6">
+                            <button class="btn produto">Ver mais</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-3 produtos">
+                <img src="/Imgs/fc24.png" alt="">
+                <div class="porduto_caract">
+                    <div class="row">
+                        <div class="col col-6">
+                            <p>59.99€</p>
+                        </div>
+                        <div class="col col-6">
+                            <button class="btn produto">Ver mais</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-3 produtos">
+                <img src="/Imgs/fc24.png" alt="">
+                <div class="porduto_caract">
+                    <div class="row">
+                        <div class="col col-6">
+                            <p>59.99€</p>
+                        </div>
+                        <div class="col col-6">
+                            <button class="btn produto">Ver mais</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-3 produtos">
+                <img src="/Imgs/fc24.png" alt="">
+                <div class="porduto_caract">
+                    <div class="row">
+                        <div class="col col-6">
+                            <p>59.99€</p>
+                        </div>
+                        <div class="col col-6">
+                            <button class="btn produto">Ver mais</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-    <section class="sec_5" id="#categorias">
-
+    <section class="sec_5" id="#contactos">
+        <div>
+            <p class="titulo">Visita-nos</p>
+        </div>
+        <div class="mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3111.4475400947226!2d-9.182805422812239!3d38.75343805518376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1932d7bd669111%3A0x1b8cf9d3c827a6db!2sPCDIGA!5e0!3m2!1spt-PT!2spt!4v1712755453341!5m2!1spt-PT!2spt" width="1200" height="550" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div>
+            <p class="titulo">Contacta-nos</p>
+        </div>
+        <div class="formulario">
+            <form method="get">
+                <input type="email" class="form" name="email" placeholder="Email">
+                <input type="text" class="form" name="nome" placeholder="Nome">
+                <input type="text" class="form" name="phone" placeholder="Nrº Telemovel">
+            </form>
+            <div class="mensage">
+                <textarea class="form-control" name="message" rows="15" data-rule="required" data-msg="Escreve o motivo de contacto" placeholder="Escreve-nos a tua mensagem"></textarea>
+            </div>
+        </div>
     </section>
-    
+    <footer>
+        <div class="row">
+            <div class="col col-12 autor">
+                <ul>
+                    <li>Realized</li>
+                    <li>&middot;</li>
+                    <li>Lucas Silvestre</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script>
+        $(document).ready(function(){
+            $("#burguer").click(function(){
+                $("#elemento").toggle();
+            });
+        });
+    </script>
 </body>
+
+
 </html>

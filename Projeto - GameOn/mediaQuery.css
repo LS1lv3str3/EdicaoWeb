@@ -1,0 +1,138 @@
+/*Media Query Telemovel*/
+
+@media only screen and (max-width: 500px) {
+
+	#navBar{
+		display: none;
+	}
+
+	.iC{
+		display: none;
+	}
+    
+    #socialMedia ul{
+        text-align: left !important;
+        padding: 0%;
+    }
+    #burguer{
+        margin-left: 17%;
+        font-size: 1.5rem;
+        color: var(--cor2);
+    }
+
+    .logotipo{
+        width: 20% !important;
+    }
+    .logotipo img{
+        width: 50%;
+    }
+
+    #elemento{
+        margin-top: 0;
+        padding: 0;
+        background-color: rgba(0,0,0,0.8);
+        width: 45%;
+        margin-left: 55%;
+        position: fixed;
+        top: 5.5rem;
+    }
+
+    #elemento ul{
+        margin: 0;
+        padding: 0;
+    }
+
+    #elemento ul li{
+        list-style: none;
+        text-align: right;
+        margin: 10% 8% 0 auto;
+        font-size: 1.5rem;
+        color: var(--cor2);
+        font-family: Poppins;
+    }
+
+    #elemento ul li:first-child{
+        margin-top: 0;
+    }
+
+    #elemento ul li:last-child{
+        margin-bottom: 3%;
+    }
+
+    #elemento a{
+        text-decoration: none !important;
+        color: var(--cor2);
+    }
+
+    #elemento i{
+        margin-left: 3%;
+    }
+
+    #banner{
+        margin: 0;
+        padding-top: 10%;
+    }
+	#banner h1:first-child{
+        padding-top: 10%;
+        font-size: 6rem;
+        text-align: center;
+
+    }
+	#banner h1:last-child{
+        font-size: 6rem;
+        text-align: center;
+    }
+
+    .sec_2{
+        margin-bottom: 5%;
+    }
+    .sec_2 .row{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .areatext{
+        width: 100%;
+    }
+    .areatext h1{
+        margin: 0;
+        font-size: 5rem;
+        text-align: center;
+    }
+    .areatext h2{
+        margin: 0;
+        font-size: 5rem;
+        text-align: center;
+    }
+    .areatext h3{
+        margin: 0;
+        font-size: 5rem;
+        text-align: center;
+    }
+
+    .areaIcon{
+        display: none;
+    }
+
+    .areaIcon2{
+        margin: 0 auto;
+        font-size: 10rem;
+        color: var(--cor2);
+        display: block;
+    }
+
+    .btnRegister{
+        margin: 0 auto 5% auto;
+    }
+
+    .sec_3{
+        display: none;
+    }
+    .sec_4{
+        display: none;
+    }
+    .sec_5{
+        display: none;
+    }
+}
