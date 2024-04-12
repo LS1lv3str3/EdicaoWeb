@@ -42,25 +42,31 @@ a{
 	text-decoration: none;
 }
 
-/*
-	Formato Desktop
-*/
+
+
+#elemento{
+	display: none;
+}
+
+#burguer{
+	display: none;
+}
+
+/*! ----- CSS HOMEPAGE ---- */
 
 /* Header */
-
 
 header{
 	width: 100%;
 	padding: 0;
 	background: linear-gradient(#013955, #0B7564);
-	position: fixed;
 	top: 3;
 	
 }
 
 
 .logotipo img{
-	width: 10%;
+	width: 35%;
 	height: auto;
 	margin-left: 2%;
 
@@ -110,11 +116,15 @@ header .col {
 }
 .navBar a{
 	color: var(--cor2);
-	font-size: 1.5rem;
+	font-size: 1.4vw;
 }
 
 .navBar i{
 	margin-right: 1%;
+}
+
+.conta i{
+	font-size: 1.5vw;
 }
 /* ---- Section 1 -----*/
 #banner{
@@ -123,12 +133,12 @@ header .col {
 }
 
 #banner h1:first-child{
-	font-size: 18rem;
-	margin: 0% 0 0 0;
+	font-size: 16rem;
+	margin: 5% 0 0 0;
 }
 
 #banner h1:last-child{
-	font-size: 35rem;
+	font-size: 34rem;
 	margin: 0% 0 0 0;
 }
 #banner .mudacor1{
@@ -247,20 +257,28 @@ header .col {
 	background-color: var(--cor5);
 }
 
-
 /*----- SECTION 3 -----*/
 
 .sec_3{
 	margin-top: 5%;
 }
 
+.sec_3 .row{
+	display: flex;
+}
+
 .ps5Logo{
 	background-color: #0038a8;
 	text-align: center;
-	padding-right: 2%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .nitendoLogo{
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	background-color: #E60012;
 	text-align: center;
 }
@@ -268,6 +286,17 @@ header .col {
 .steamLogo{
 	background: linear-gradient(#081F4A, #137fb0);
 	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.steamLogo svg{
+	height: 15vh !important;
+}
+
+.sec_3 .col-4{
+	height: 24vh;
 }
 
 /*----- SECTION 4 -----*/
@@ -279,13 +308,13 @@ header .col {
 .produtos{
 	text-align: center;
 	background-color: var(--cor5);
-	margin-left: 3%;
+	margin-left: 5%;
 	margin-top: 5%;
 	border-radius: 4%;
 }
 
 .produtos:last-child{
-	margin-right: 3%;
+	margin-right: 5%;
 }
 
 .produtos img{
@@ -359,28 +388,29 @@ header .col {
 .formulario .form{
 	border: none;
 	border-bottom: 2px solid var(--cor3);
-	font-size: 1rem;
+	font-size: 1.5rem;
 	background-color: transparent;
-	width: 15%;
+	width: 25%;
 }
 
 .form:focus{
 	outline: none;
 }
 
-.mensage{
+.message{
 	margin-top: 2%;
 	width: 100%;
 	text-align: left;
 }
 
-.mensage textarea{
+.message textarea{
 	width: 100%;
 	background-color: rgba(1,57,85, 0.1);
 	border-style: solid;
 	border-width: 1px;
 	border-color: var(--cor3);
-	font-size: 1rem;
+	font-size: 1.5rem;
+	height: 20rem;
 }
 
 .mensage textarea:focus{
@@ -406,3 +436,64 @@ header .col {
 	font-family: Poppins;
 }
 
+/*! ----- CSS Página registo ---- */
+
+
+.regst{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 86vh;
+
+}
+
+.questRegst{
+	background-color: var(--cor5);
+	margin-top: 5%;
+	margin-bottom: 5%;
+	border-radius: 30px;
+	width: 50%;
+}
+
+#tituloregst{
+	font-family:  Poppins;
+	font-size: 5rem;
+	color: #EBEBEB;;
+	margin: 0;
+	text-align: center;
+}
+
+.rgstform{
+	margin: 5% 0% 5% 13%;
+	width: 70%;
+	border-radius: 30px;
+	border: none;
+	font-size: 1.2rem;
+	padding: 2% 0 2% 3%;
+
+}
+
+.regst input:focus{
+	outline: none;
+}
+
+#firstinp{
+	margin: 5% 0% 5% 13%;
+	width: 70%;
+	border-radius: 30px;
+	border: none;
+}
+
+.password_req{
+	margin-left: 18%;
+	color: #EBEBEB;
+}
+
+#password{
+	margin-bottom: 2%;
+}
+
+#inpDate{
+	margin: 5% 0% 13% 13%;
+}

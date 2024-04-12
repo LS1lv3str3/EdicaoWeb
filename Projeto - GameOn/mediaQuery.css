@@ -1,6 +1,11 @@
 /*Media Query Telemovel*/
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 768px) {
+
+    /*! CSS Home Page*/
+    header{
+        position: fixed;
+    }
 
 	#navBar{
 		display: none;
@@ -14,14 +19,19 @@
         text-align: left !important;
         padding: 0%;
     }
+    
+    #socialMedia i{
+        font-size: 5vw;
+    }
     #burguer{
-        margin-left: 17%;
+        display: inline-flex;
+        margin-left: 27%;
         font-size: 1.5rem;
         color: var(--cor2);
     }
 
     .logotipo{
-        width: 20% !important;
+        width: 9% !important;
     }
     .logotipo img{
         width: 50%;
@@ -57,6 +67,7 @@
 
     #elemento ul li:last-child{
         margin-bottom: 3%;
+
     }
 
     #elemento a{
@@ -90,6 +101,7 @@
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
+        padding: 0%;
     }
 
     .areatext{
@@ -99,6 +111,7 @@
         margin: 0;
         font-size: 5rem;
         text-align: center;
+        margin-top: 5%;
     }
     .areatext h2{
         margin: 0;
@@ -116,23 +129,235 @@
     }
 
     .areaIcon2{
-        margin: 0 auto;
         font-size: 10rem;
         color: var(--cor2);
         display: block;
+        width: 100%;
+        text-align: center;
     }
 
     .btnRegister{
-        margin: 0 auto 5% auto;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10%;
     }
 
-    .sec_3{
-        display: none;
+    .btnRegister a{
+        padding: 2vw 7vw;
+        font: 1.5rem;
     }
-    .sec_4{
-        display: none;
+
+    .sec_3 .row{
+        display: flex;
+        flex-direction: column;
     }
-    .sec_5{
-        display: none;
+    .sec_3 .col-4{
+        width: 100%;
     }
+
+    .logoscat{
+        width: 100%;
+        padding: 0;
+    }
+
+    .sec_3 .col-4{
+        height: 20vh !important;
+    }
+
+    #steamLogo{
+        height: 18vh;
+    }
+
+    .sec_4 .row{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .produtos{
+        width: 80%;
+        margin: 5% 0 2% 0;
+    }
+
+    .produtos:last-child{
+        margin-right: 0%;
+    }
+
+    .preco{
+        margin-bottom: 5%;
+    }
+
+    .porduto_caract {
+        margin-bottom: 5%;
+        margin-top: 7%;
+    }
+
+    .porduto_caract p{
+        font-size: 5vw
+    }
+
+    .porduto_caract button{
+        font-size: 3vw;
+    }
+    .sec_5 .titulo{
+        font-size: 4rem;
+    }
+
+    .sec_5 .mapa iframe{
+        width: 80%;
+        height: 20rem;
+    }
+
+    #titulo_sec{
+        font-size: 3.3rem;
+        margin: 0;
+    }
+    
+    .formulario{
+        width: 80%;
+    }
+
+    .formulario form{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .formulario .form{
+        width: 100%;
+        font-size: 1.3rem;
+        margin-top: 10%;
+    }
+
+    /*! CSS Home Page*/
+
+
 }
+
+@media only screen and (min-width: 770px) and (max-width: 1200px){
+    /*! CSS Home Page*/
+
+    .logotipo{
+        width: 10%;
+    }
+    .logotipo img{
+        width: 95%;
+    }
+
+    #navBar a{
+        font-size: 1.9vw;
+    }
+
+    #navBar ul:last-child{
+        padding-right: 5%;
+    }
+
+    .conta ul{
+        padding: 0%;
+
+    }
+
+    #navBar:first-child{
+        margin-left: 4%;
+    }
+
+    #socialMedia i{
+        font-size: 2.5vw;
+    }
+
+    #banner{
+        width: 100%;
+    }
+
+    #banner h1:first-child{
+        font-size: 20vw;
+    }
+
+    #banner h1:last-child{
+        font-size: 40vw;
+    }
+
+    .areatext{
+        text-align: right;
+        width: 40%;
+        padding: 0;
+    }
+
+    .areatext h1{
+        font-size: 6vw;
+        margin: 5% 20% 0 0;
+    }
+    .areatext h2{
+        font-size: 6vw;
+        margin: 2% 20% 0 0;
+    }
+    .areatext h3{
+        font-size: 6vw;
+        margin: 5% 20% 0 0;
+    }
+
+    .areaIcon{
+        font-size: 15vw;
+    }
+
+    .areaIcon i{
+        vertical-align: middle;
+    }
+
+    .btnRegister a{
+        padding: 3vw 6vw;
+        font-size: 4vw;
+    }
+
+    .sec_4 .row{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .sec_4 .col-3{
+        width: 40%;
+        margin-left: 6.5%;
+        
+    }
+
+    .sec_4 .col-4{
+        margin-right: 0;
+    }
+
+    .sec_5 .titulo{
+        font-size: 5vw;
+    }
+
+    .sec_5 .mapa iframe{
+        width: 80%;
+        height: 20rem;
+    }
+
+    #titulo_sec{
+        font-size: 5vw;
+        margin: 2% 0 0 0;
+    }
+    
+    .formulario{
+        width: 80%;
+    }
+
+    .formulario form{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .formulario .form{
+        width: 100%;
+        font-size: 1.3rem;
+        margin-top: 5%;
+    }
+
+    .formulario .form:first-child{
+        margin-top: 0;
+    }
+    
+    .message textarea{
+        font-size: 2vw;
+        height: 20vh;
+    }
+} 
