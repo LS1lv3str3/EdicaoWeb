@@ -44,7 +44,7 @@
         width: 45%;
         margin-left: 55%;
         position: fixed;
-        top: 5.5rem;
+        top: 4.9rem;
     }
 
     #elemento ul{
@@ -229,7 +229,32 @@
         margin-top: 10%;
     }
 
-    /*! CSS Home Page*/
+    /*! CSS Página Registo */
+
+    .regst{
+        height: 90vh;
+    }
+
+    .questRegst{
+        margin:0;
+        width: 80%;
+
+    }
+
+    .questRegst .col-6{
+        width: 100%;
+    }
+
+    .questRegst .row{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #tituloregst{
+        font-size: 4rem;
+        margin-bottom: 5%;
+    }
+
 
 
 }
@@ -254,7 +279,13 @@
 
     .conta ul{
         padding: 0%;
+        text-align: left;
+        font-size: 1.9vw;
 
+    }
+
+    #burguer{
+        margin: 0;
     }
 
     #navBar:first-child{

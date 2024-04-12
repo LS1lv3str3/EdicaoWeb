@@ -13,12 +13,12 @@
     <body>
         <header>
             <div class="row">
-                <div class="col col-3 logotipo">
+                <div class="col col-2 logotipo">
                     <a href="homePage.html">
                         <img src="/Imgs/Logotipo_GameOn.png" alt="">
                     </a>
                 </div>
-                <div class="col col-6" id="navBar">
+                <div class="col col-8" id="navBar">
                     <nav>
                         <ul class="navBar">
                             <li><a href="/homePage.html"><i class="fa-sharp fa-solid fa-house fa-sm"></i>Home</a></li>
@@ -29,13 +29,14 @@
                         </ul>
                     </nav>
                 </div>
-                <div class="col col-3 conta" id="socialMedia">
+                <div class="col col-2 conta" id="socialMedia">
                     <ul>
                         <a href="#"><i class="fa-brands fa-square-facebook fa-xl"></i></a>
                         <a href="#"><i class="fa-brands fa-x-twitter fa-xl"></i></a>
                         <a href="#"><i class="fa-brands fa-instagram fa-xl"></i></a>
-                        <a href="/register.html"><i class="fa-solid fa-user fa-xl iC" id="socialMedia"></i></a>
+                        <a href="/register.html" class="iC"><i class="fa-solid fa-user fa-xl iC" id="socialMedia"></i></a>
                         <i class="fas fa-bars" id="burguer"></i>
+                        
                     </ul>
                 </div>
             </div>
@@ -59,23 +60,23 @@
                             <div><input type="text" class="rgstform" id="firstinp" placeholder="Nome" required></div>
                         </div>
                         <div class="col col-6">
-                            <div><input type="email" class="rgstform" placeholder="Email" required></div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col col-6">
                             <div><input type="text" class="rgstform" placeholder="Apelido" required></div>
                         </div>
-                        <div class="col col-6">
-                            <div><input type="password" class="rgstform" id="password" placeholder="Password" required></div>
-                        </div>
                     </div>
                     <div class="row">
                         <div class="col col-6">
-                            <div><input type="text" class="rgstform" id="inpDate" placeholder="Data Nascimento"></div>
+                            <div><input type="email" class="rgstform" placeholder="Email" required></div>
                         </div>
                         <div class="col col-6">
-                            <div><input type="password" class="rgstform" placeholder="Confirmar Password" required></div>
+                            <div><input type="text" class="rgstform" placeholder="Data Nascimento"></div>
+                        </div>
+                    </div>
+                    <div class="row" id="password">
+                        <div class="col col-6">
+                            <div><input type="password" class="rgstform"  placeholder="Password" required></div>
+                        </div>
+                        <div class="col col-6">
+                            <div><input type="password" class="rgstform"  placeholder="Confirmar Password" required></div>
                         </div>
                     </div>
                 </form>
