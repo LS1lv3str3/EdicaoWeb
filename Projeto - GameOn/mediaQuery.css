@@ -14,7 +14,12 @@
 	.iC{
 		display: none;
 	}
-    
+
+    #socialMedia{
+        text-align: right;
+        padding-right: 5%;
+    }
+
     #socialMedia ul{
         text-align: left !important;
         padding: 0%;
@@ -25,8 +30,7 @@
     }
     #burguer{
         display: inline-flex;
-        margin-left: 27%;
-        font-size: 1.5rem;
+        margin-left: 30%;
         color: var(--cor2);
     }
 
@@ -34,7 +38,8 @@
         width: 9% !important;
     }
     .logotipo img{
-        width: 50%;
+        width: 46%;
+        margin-left: 5%;
     }
 
     #elemento{
@@ -44,7 +49,7 @@
         width: 45%;
         margin-left: 55%;
         position: fixed;
-        top: 4.9rem;
+        top: 4.5rem;
     }
 
     #elemento ul{
@@ -231,13 +236,28 @@
 
     /*! CSS Página Registo */
 
+    .register{
+        background-color: var(--cor5);
+    }
+
+    
+
+    .headerRegisto{
+        box-shadow: 0 3px 5px 0 rgba(0,0,0,.11);
+
+    }
+
+    .headerRegisto img{
+        width: 30%;
+    }
+
     .regst{
         height: 90vh;
     }
 
     .questRegst{
-        margin:0;
-        width: 80%;
+        background-color: transparent;
+        width: 90%;
 
     }
 
@@ -251,8 +271,9 @@
     }
 
     #tituloregst{
-        font-size: 4rem;
-        margin-bottom: 5%;
+        font-size: 1.5rem;
+        color: var(--cor2);
+        font-weight: bold;
     }
 
 
@@ -266,7 +287,7 @@
         width: 10%;
     }
     .logotipo img{
-        width: 95%;
+        width: 70%;
     }
 
     #navBar a{
@@ -336,7 +357,7 @@
     }
 
     .btnRegister a{
-        padding: 3vw 6vw;
+        padding: 2vw 5vw;
         font-size: 4vw;
     }
 
