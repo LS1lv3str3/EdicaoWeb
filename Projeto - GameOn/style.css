@@ -585,9 +585,30 @@ header .col {
 
 /*! ----- CSS Página produtos ---- */
 
-.pageProdutos .row{
+.pageProdutos svg{
+	margin-top: 3%;
+}
+
+.pageProdutos .sec_1 .row{
 	display: flex;
+	justify-content: center;
 }
 .pageProdutos .sec_1 img{
-	width: 30%;
+	width: 65%;
 }
+
+.pageProdutos .produtos{
+	width: 15%;
+	margin-top: 3%;
+	box-shadow: 5px 5px 10px var(--cor3);
+}
+
+#tituloWiiU{
+	font-family: Poppins;
+	font-size: 6rem;
+	text-align: center;
+	margin-bottom: 0;
+	margin-top: 3%;
+}
+
+
