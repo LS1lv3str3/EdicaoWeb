@@ -240,8 +240,6 @@
         background-color: var(--cor5);
     }
 
-    
-
     .headerRegisto{
         box-shadow: 0 3px 5px 0 rgba(0,0,0,.11);
 
@@ -274,6 +272,23 @@
         font-size: 1.5rem;
         color: var(--cor2);
         font-weight: bold;
+    }
+
+     /*! CSS Página Sobre */
+     .sobre{
+        display: flex;
+        flex-direction: column;
+     }
+    
+    .sobre .col-6{
+        width: 100%;
+    }
+
+    #apresentacao{
+        font-size: 1.2rem;
+    }
+    #apresentacao p{
+        margin-left: 5%;
     }
 
 
@@ -411,5 +426,35 @@
     .message textarea{
         font-size: 2vw;
         height: 20vh;
+    }
+
+
+
+    /*! CSS Página Sobre */
+    .sobrePage .sec_1 #banner h1:first-child{
+        font-size: 12vw;
+    }
+
+    .sobrePage .sec_1 #banner h1:last-child{
+        font-size: 20vw;
+
+    }
+
+    .sobrePage .sobre{
+        display: flex;
+        flex-direction: column;
+    }
+    .sobrePage .sec_1 #banner {
+        width: 100%;
+    }
+
+    .sobrePage .sec_1 #apresentacao{
+        width: 95%;
+        margin-left: 5%;
+        padding: 0;
+    }
+
+    .sobrePage .sec_1 #apresentacao p{
+        width: 95%;
     }
 } 
