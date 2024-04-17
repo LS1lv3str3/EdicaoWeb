@@ -344,6 +344,7 @@ header .col {
 	border-style: solid;
 	border-color: #000000;
 	color: var(--cor2);
+	cursor: pointer;
 }
 
 .porduto_caract button:hover{
@@ -589,11 +590,11 @@ header .col {
 	margin-top: 3%;
 }
 
-.pageProdutos .sec_1 .row{
+.pageProdutos .secProdutos .row{
 	display: flex;
 	justify-content: center;
 }
-.pageProdutos .sec_1 img{
+.pageProdutos .secProdutos img{
 	width: 65%;
 }
 
@@ -603,12 +604,73 @@ header .col {
 	box-shadow: 5px 5px 10px var(--cor3);
 }
 
-#tituloWiiU{
-	font-family: Poppins;
-	font-size: 6rem;
-	text-align: center;
-	margin-bottom: 0;
-	margin-top: 3%;
+#logotipoCate{
+	width: 20%;
+	display: flex;
+	margin: 3% auto 0 auto;
 }
 
+.secProdutos svg{
+	margin: 0 auto;
+}
 
+#logonitendoJogos{
+	width: 20%;
+	background-color: #fe0016;
+}
+
+.secProdutos img{
+	height: 24rem;
+}
+
+/*! ----- CSS Página ficha produtos ---- */
+
+.fichadeProduto{
+	padding-top: 5%;
+}
+.fichadeProduto .col-2{
+	text-align: center;
+	vertical-align: middle;
+}
+
+.fichadeProduto img{
+	width: 50%;
+	box-shadow: 3px 3px 10px var(--cor1);
+}
+
+#tituloJogo{
+	font-family: Poppins;
+	font-size: 5rem;
+	margin-bottom: 0;
+	width: 70%;
+}
+
+#descricaoJogo{
+	font-size: 1.5rem;
+	text-align: justify;
+	width: 70%;
+	margin-top: 2%;
+}
+
+.fichadeProduto .porduto_caract{
+	margin: 2% 0 0 0;
+	width: 70%;
+}
+
+.fichadeProduto .porduto_caract .col-6{
+	text-align: right;
+}
+
+.fichadeProduto .porduto_caract p{
+	font-size: 2.3rem;
+	color: var(--cor1);
+	margin: 0;
+
+	
+}
+
+.produtoInfo footer{
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}

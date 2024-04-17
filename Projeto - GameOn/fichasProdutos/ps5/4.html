@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/fontawesome/css/all.css">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/mediaQuery.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Jogo Steam</title>
+</head>
+<body class="produtoInfo">
+    <header>
+        <div class="row">
+            <div class="col col-2 logotipo">
+                <a href="homePage.html">
+                    <img src="/Imgs/Logotipo_GameOn.png" alt="">
+                </a>
+            </div>
+            <div class="col col-8" id="navBar">
+                <nav>
+                    <ul class="navBar">
+                        <li><a href="/homePage.html"><i class="fa-sharp fa-solid fa-house fa-sm"></i>Home</a></li>
+                        <li><a href="/sobre.html"><i class="fa-solid fa-circle-info"></i>Sobre</a></li>
+                        <li><a href="/categorias.html"><i class="fa-solid fa-list"></i>Categorias</a></li>
+                        <li><a href="/categorias.html"><i class="fa-solid fa-gamepad"></i>Produtos</a></li>
+                        <li><a href="#contactos"><i class="fa-solid fa-phone"></i>Contactos</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col col-2 conta" id="socialMedia">
+                <ul>
+                    <a href="#"><i class="fa-brands fa-square-facebook fa-xl"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter fa-xl"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram fa-xl"></i></a>
+                    <a href="/register.html" class="iC"><i class="fa-solid fa-user fa-xl iC" id="socialMedia"></i></a>
+                    <i class="fas fa-bars" id="burguer"></i>
+                    
+                </ul>
+            </div>
+        </div>
+        <div id="elemento">
+            <ul>
+                <li><a href="/homePage.html">Home</a><i class="fa-sharp fa-solid fa-house fa-sm"></i></li>
+                <li><a href="/sobre.html">Sobre</a><i class="fa-solid fa-circle-info"></i></li>
+                <li><a href="/categorias.html">Categorias</a><i class="fa-solid fa-list"></i></li>
+                <li><a href="/produtos.html">Produtos</a><i class="fa-solid fa-gamepad"></i></li>
+                <li><a href="#contactos">Contactos</a><i class="fa-solid fa-phone"></i></li>
+                <li><a href="/register.html">Conta</a><i class="fa-solid fa-user fa-xl"></i></li>
+            </ul>
+        </div>
+    </header>
+    
+    <section id="jogo4">
+        <div class="row fichadeProduto">
+            <div class="col col-2">
+                <img src="/Imgs/jogosSteam/4.png" alt="">
+            </div>
+            <div class="col col-6">
+                <p id="tituloJogo">SIFU</p>
+                <p id="descricaoJogo">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eu mauris ut dolor porttitor sagittis. Vivamus turpis diam, euismod eget felis a, eleifend euismod nibh. Suspendisse potenti. In lacus nisi, pulvinar ut auctor non, convallis ac erat. Suspendisse iaculis metus dolor. Nam nec feugiat nisi, vitae dignissim tellus. Cras blandit ligula in enim egestas aliquet. Duis sit amet magna nec eros tempor vestibulum. Sed consectetur consequat volutpat. Cras consectetur leo lacus, vitae viverra ex varius vitae. <br><br>
+                    Ut sed turpis risus. Nullam consectetur dui lacus, ac placerat elit rutrum ac. Donec dapibus sapien id velit suscipit, eleifend convallis nunc volutpat. Maecenas pharetra enim non ante eleifend, sed volutpat ante ullamcorper. Morbi convallis nibh et arcu hendrerit vulputate. Fusce accumsan diam purus, ut bibendum enim sodales sit amet. Suspendisse at mattis nunc, nec lobortis ipsum. Morbi dictum, nulla sed pellentesque consequat, nulla neque finibus ante, quis volutpat metus felis non ante. Curabitur a justo arcu. Proin at nibh suscipit, luctus nibh id, lobortis tellus. Aenean in dolor semper, cursus est sit amet, viverra odio. Cras neque massa, rhoncus non mollis vitae, dignissim eget ex.
+                </p>
+                <div class="porduto_caract">
+                    <div class="row">
+                        <div class="col col-10 preco">
+                            <p>11.85€</p>
+                        </div>
+                        <div class="col col-2">
+                            <button class="btn produto"><i class="fa-solid fa-cart-shopping"></i> Comprar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="row">
+            <div class="col col-12 autor">
+                <ul>
+                    <li>Realized</li>
+                    <li style="margin: 0 0.5%;">&middot;</li>
+                    <li>Lucas Silvestre</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script>
+        $(document).ready(function(){
+            $("#burguer").click(function(){
+                $("#elemento").toggle();
+            });
+        });
+    </script>
+    
+</body>
+</html>

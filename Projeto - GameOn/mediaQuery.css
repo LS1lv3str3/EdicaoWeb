@@ -291,8 +291,44 @@
         margin-left: 5%;
     }
 
+    /*! CSS Página Produtos */
 
+    .secProdutos .row{
+        display: flex !important;
+        flex-direction: column;
+        margin-left: 10%;
+    }
+    .secProdutos .col-3{
+        width: 80%;
+    }
 
+    .secProdutos #logotipoCate{
+        width: 100% !important;
+        margin-top: 25%;
+        
+    }
+
+    .secProdutos #logotipoCate svg{
+        width: 100%;
+
+    }
+
+    .pageProdutos .produtos{
+        margin-top: 10%;
+    }
+
+    .pageProdutos .porduto_caract .row{
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #steamJogos svg {
+        width: 30% !important;
+    }
+    
+    
 }
 
 @media only screen and (min-width: 770px) and (max-width: 1200px){
@@ -457,4 +493,33 @@
     .sobrePage .sec_1 #apresentacao p{
         width: 95%;
     }
-} 
+
+    /*! CSS Página Produtos */
+
+    .secProdutos .row{
+        display: flex !important;
+        flex-wrap: wrap;
+        
+        
+    }
+    .secProdutos .col-3{
+        width: 40% !important;
+        margin: 5% auto !important;
+    }
+
+    #logotipoCate{
+        width: 100% !important;
+    }
+
+    #logotipoCate svg{
+        width: 80% !important;
+    }
+
+    #steamJogos svg{
+        width: 30% !important;
+    }
+
+    #nitendoSWJogos svg{
+        width: 30% !important;
+    }
+}       
