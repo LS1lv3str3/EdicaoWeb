@@ -577,4 +577,36 @@
     #nitendoSWJogos svg{
         width: 30% !important;
     }
+
+    /*! CSS Ficha Produtos */   
+
+    .produtoInfo footer{
+        position: relative;
+    }
+
+    .produtoInfo .fichadeProduto{
+        align-items: start;
+    }
+
+    .fichadeProduto img{
+        margin-top: 25%;
+    }
+
+    .fichadeProduto .col-2{
+        width: 50%;
+        margin-left: 0%;
+    }
+
+
+    #tituloJogo{
+        font-size: 3.5rem;
+    }
+
+    #descricaoJogo{
+        font-size: 1.3rem;
+    }
+
+    .fichadeProduto .porduto_caract .col-10{
+        width: 50%;
+    }
 }       
