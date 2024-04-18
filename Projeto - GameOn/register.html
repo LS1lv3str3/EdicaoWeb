@@ -11,27 +11,44 @@
         <title>HomePage</title>
     </head>
     <body class="register">
-        <header class="headerRegisto">
+        <header>
             <div class="row">
-                <div class="col col-1 logotipo">
+                <div class="col col-2 logotipo">
                     <a href="homePage.html">
                         <img src="/Imgs/Logotipo_GameOn.png" alt="">
                     </a>
                 </div>
-                <div class="col col-11" id="navBar">
+                <div class="col col-8" id="navBar">
                     <nav>
                         <ul class="navBar">
                             <li><a href="/homePage.html"><i class="fa-sharp fa-solid fa-house fa-sm"></i>Home</a></li>
-                            <li><a href="/sobre.html"><i class="fa-solid fa-circle-info"></i>Sobre</a></li>
-                            <li><a href="/categorias.html"><i class="fa-solid fa-list"></i>Categorias</a></li>
-                            <li><a href="/categorias.html"><i class="fa-solid fa-gamepad"></i>Produtos</a></li>
-                            <li><a href="#contactos"><i class="fa-solid fa-phone"></i>Contactos</a></li>
+                        <li><a href="/sobre.html"><i class="fa-solid fa-circle-info"></i>Sobre</a></li>
+                        <li><a href="/categorias.html"><i class="fa-solid fa-list"></i>Categorias</a></li>
+                        <li><a href="/produtos.html"><i class="fa-solid fa-gamepad"></i>Produtos</a></li>
+                        <li><a href="/homePage.html#contactos"><i class="fa-solid fa-phone"></i>Contactos</a></li>
                         </ul>
                     </nav>
                 </div>
-                <div class="col col-1 conta" id="socialMedia">
-                    <i class="fas fa-bars" id="burguer"></i>
+                <div class="col col-2 conta" id="socialMedia">
+                    <ul>
+                        <a href="#"><i class="fa-brands fa-square-facebook fa-xl"></i></a>
+                        <a href="#"><i class="fa-brands fa-x-twitter fa-xl"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram fa-xl"></i></a>
+                        <a href="/register.html" class="iC"><i class="fa-solid fa-user fa-xl iC" id="socialMedia"></i></a>
+                        <i class="fas fa-bars" id="burguer"></i>
+                        
+                    </ul>
                 </div>
+            </div>
+            <div id="elemento">
+                <ul>
+                    <li><a href="/homePage.html">Home</a><i class="fa-sharp fa-solid fa-house fa-sm"></i></li>
+                    <li><a href="/sobre.html">Sobre</a><i class="fa-solid fa-circle-info"></i></li>
+                    <li><a href="/categorias.html">Categorias</a><i class="fa-solid fa-list"></i></li>
+                    <li><a href="/produtos.html">Produtos</a><i class="fa-solid fa-gamepad"></i></li>
+                    <li><a href="#contactos">Contactos</a><i class="fa-solid fa-phone"></i></li>
+                    <li><a href="/register.html">Conta</a><i class="fa-solid fa-user fa-xl"></i></li>
+                </ul>
             </div>
         </header>
         <div id="elemento">
@@ -56,6 +73,10 @@
                     <div><input type="password" class="rgstform" id="conf_password"  placeholder="Confirmar Password" required></div>
                     <div class="btn-Resgt">
                         <button class="btn-Resgt" id="submit">Criar Conta</button>
+                    </div>
+                    <div id="linkLogin">
+                        <p>Já tens Conta?</p>
+                        <a href="/login.html">Login</a>
                     </div>
                 </form>
             </div>

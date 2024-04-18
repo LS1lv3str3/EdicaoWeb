@@ -52,6 +52,12 @@ a{
 	display: none;
 }
 
+#footerfix{
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+}
+
 /*! ----- CSS HOMEPAGE ---- */
 
 /* Header */
@@ -421,7 +427,7 @@ header .col {
 	margin-top: 5%;
 	font-size: 1.5rem;
 	background: linear-gradient(#013955, #0B7564);
-	height: 6rem;
+	height: 5rem;
 	vertical-align: middle;
 }
 
@@ -511,6 +517,24 @@ header .col {
 
 }
 
+#linkLogin{
+	display: flex;
+	margin-top: 2%;
+	color: var(--cor2);
+	font-family: Poppins;
+	align-items: center;
+	justify-content: center;
+}
+
+#linkLogin p{
+	margin: 0;
+}
+
+#linkLogin a{
+	margin-left: 1%;
+}
+
+
 /*! Página Sobre*/
 #apresentacao{
 	font-size: 1.5rem;
@@ -526,6 +550,12 @@ header .col {
 }
 
 /*! ----- CSS Página Categorias ---- */
+
+#tituloCategorias{
+	text-align: center;
+	font-family: Poppins;
+	font-size: 4rem;
+}
 
 .catPage .sec_1 .row{
 	display: flex;
@@ -598,6 +628,11 @@ header .col {
 	width: 65%;
 }
 
+.pageProdutos #nitendoJogos img{
+	width: 65%;
+	height: 13rem;
+}
+
 .pageProdutos .produtos{
 	width: 15%;
 	margin-top: 3%;
@@ -624,17 +659,22 @@ header .col {
 }
 
 /*! ----- CSS Página ficha produtos ---- */
-
+.fichadeProduto .col-10{
+	padding-left: 5%;
+}
 .fichadeProduto{
-	padding-top: 5%;
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
 }
 .fichadeProduto .col-2{
 	text-align: center;
-	vertical-align: middle;
+	margin-left: 6%;
 }
 
 .fichadeProduto img{
-	width: 50%;
+	width: 70%;
 	box-shadow: 3px 3px 10px var(--cor1);
 }
 
@@ -642,19 +682,19 @@ header .col {
 	font-family: Poppins;
 	font-size: 5rem;
 	margin-bottom: 0;
-	width: 70%;
+	width: 90%;
 }
 
 #descricaoJogo{
 	font-size: 1.5rem;
 	text-align: justify;
-	width: 70%;
+	width: 90%;
 	margin-top: 2%;
 }
 
 .fichadeProduto .porduto_caract{
 	margin: 2% 0 0 0;
-	width: 70%;
+	width: 90%;
 }
 
 .fichadeProduto .porduto_caract .col-6{
@@ -673,4 +713,8 @@ header .col {
 	position: fixed;
 	bottom: 0;
 	width: 100%;
+}
+
+.porduto_caract .preco{
+	padding: 0;
 }

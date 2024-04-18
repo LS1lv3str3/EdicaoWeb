@@ -5,6 +5,7 @@
     /*! CSS Home Page*/
     header{
         position: fixed;
+        top: 0;
     }
 
 	#navBar{
@@ -203,7 +204,7 @@
     }
 
     .porduto_caract button{
-        font-size: 3vw;
+        font-size: 4vw;
     }
     .sec_5 .titulo{
         font-size: 4rem;
@@ -291,12 +292,37 @@
         margin-left: 5%;
     }
 
+    /*! CSS Categorias */
+
+    #tituloCategorias{
+        margin-top: 25%;
+        text-align: center;
+        font-family: Poppins;
+        font-size: 3rem;
+    }
+
+    .catPage{
+        margin: 0
+    }
+    .catPage .sec_1 .row{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .catPage .col-3{
+        width: 50%;
+    }
+
+    .catPage #steamLogo{
+        height: auto;
+    }
+
     /*! CSS Página Produtos */
 
     .secProdutos .row{
         display: flex !important;
         flex-direction: column;
-        margin-left: 10%;
+        align-items: center;
     }
     .secProdutos .col-3{
         width: 80%;
@@ -328,6 +354,35 @@
         width: 30% !important;
     }
     
+    /*! CSS Página Ficha Produtos */
+
+    .fichadeProduto{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .fichadeProduto .col-2{
+        width: 100%;
+        margin-top: 25%;
+        margin-left: 0%;
+    }
+
+    #tituloJogo{
+        font-size: 3.5rem;
+    }
+
+    #descricaoJogo{
+        font-size: 1.3rem;
+    }
+
+    .fichadeProduto .porduto_caract .col-10{
+        width: 50%;
+    }
+
+    .produtoInfo footer{
+        position: relative;
+    }
     
 }
 
