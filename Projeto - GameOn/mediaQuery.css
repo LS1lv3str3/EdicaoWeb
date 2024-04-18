@@ -299,6 +299,10 @@
         margin-left: 5%;
     }
 
+    .sobrePage #footerfix{
+        position: relative;
+    }
+
     /*! CSS Categorias */
 
     #tituloCategorias{
