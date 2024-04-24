@@ -6,6 +6,4 @@ include 'teste/nav.php';
 include 'teste/main.php';
 include 'teste/footer.php';
 
-
-
 ?>

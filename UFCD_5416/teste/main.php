@@ -1,14 +1,14 @@
 <main>
 <?php 
 	
-$nav = $_REQUEST['nav'];
+@$nav = $_REQUEST['nav'];
 switch ($nav) {
 	case '1':
 		echo 'Conteudo Menu 1';
 		include 'conteudo1.php';
 		break;
 	case '2':
-		echo 'Conteudo Menu 2';
+		include 'conteudo2.php';
 		break;
 	case '3':
 		echo 'Conteudo Menu 3';
