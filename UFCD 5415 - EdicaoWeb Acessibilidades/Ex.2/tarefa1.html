@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Ex.2/tarefa1.css">
+    <title>Tarefa 2</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="/Ex.2/img1.png" height="150px" width="300px">
+            <h1 style="font-size: 50px;" id="titulo">UFCD 5415 - Tarefa Nrº2</h1>
+        </div>
+    </header>
+    <div class="container">
+        <span>Interações</span>
+        <div class="interacoes">
+            <div id="topo">
+                <ul>
+                    <li><a href="#" onclick="escrever()">Mudar Estilo</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <span>Contentor</span>
+        <div class="conteudo">
+            <div id="esquerda">
+                <section>
+                    <h2>Dados Recebidos</h2>
+                    <p>Nome: <span id = "nome_display"></span></p>
+                    <p>Contacto: <span id = "contacto_display"></span></p>
+                    <p>Data Envio: <span id = "dt_display"></span></p>
+                    <p>Refeição Escolhida: <span id = "reficao_display"></span></p>
+                </section>
+            </div>
+            <div id="direita"> 
+                <h2>Formulário</h2>
+                <form action="" id="form_1" class="form_1">
+                    <label for="nome">Nome</label>
+                    <input type="text" name = "nome" id="nome" value="">
+                    <label for="contacto">Contacto</label>
+                    <input type="text" name = "contacto" id="contacto" value="">
+                    <label for="dt_envio">Data Envio</label>
+                    <input type="date" name = "dt_envio" id="dt_envio" value="">
+
+                    <label for="refeicao">Escolher a Refeição</label>
+                    <select name = "refeicao" id="refeicao" value="">
+                        <option value="peq_almoco">Pequeno Almoço</option>
+                        <option value="almoco">Almoço</option>
+                        <option value="lanche">Lanche</option>
+                        <option value="jantar">Jantar</option>
+                    </select>
+                    <div class="buttons">
+                        <input id="btn_enviar" type="button" value = "Mostrar Display" onclick = "dadosDisplay()">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="/Ex.2/script.js"></script>
+</body>
+</html>
