@@ -7,9 +7,35 @@
     <title>Tarefa 1</title>
 </head>
 <body>
-    <div class="logo">
-        <img src="/img1.png" height="150px" width="300px">
-        <h1 style="font-size: 50px;">UFCD 5415 - T1</h1>
+    <header>
+        <div class="logo">
+            <img src="/img1.png" height="150px" width="300px">
+            <h1 style="font-size: 50px;" id="titulo">UFCD 5415 - Tarefa Nrº1</h1>
+        </div>
+    </header>
+    <div class="container">
+        <span>Interações</span>
+        <div class="interacoes">
+            <div id="topo">
+                <ul>
+                    <li><a href="#" onclick="escrever()">Escrever</a></li>
+                    <li><a href="#" onclick="apagarTexto()">Apagar</a></li>
+                </ul>
+            </div>
+        </div>
     </div>
+    <div class="container">
+        <span>Resultado</span>
+        <div class="conteudo">
+            <div id="esquerda">
+                <p>Esquerda</p>
+                <p id="addTexto"></p>
+            </div>
+            <div id="direita"> 
+                <p>Direita</p>
+            </div>
+        </div>
+    </div>
+    <script src="/script.js"></script>
 </body>
 </html>

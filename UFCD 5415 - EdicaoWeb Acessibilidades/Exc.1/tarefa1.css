@@ -1,6 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 body{
     display: flex;
     flex-direction: column;
+    background-color: #F2E8CF;
+    font-family: Poppins;
+}
+
+p{
+    text-transform: uppercase;
 }
 
 .logo{
@@ -8,3 +16,71 @@ body{
     flex-direction: row;
     align-items: center;
 }
+
+.container{
+    border: 1px black solid;
+    margin-top: 1%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.container span{
+    margin: 0 auto;
+    font-size: 1.3rem
+}
+
+#titulo{
+    margin-left: 2%;
+    
+}
+
+#topo{
+    margin-top: 1%;
+}
+
+
+#topo li{
+    list-style: none;
+    display: inline-flex;
+    margin-left: 2%;
+}
+
+#topo li:first-child{
+    margin-left: 0%;
+}
+
+#topo a{
+    text-decoration: none;
+    color:black;
+    background-color: rgba(72, 132, 84, 0.7);
+    padding: 0.5% 1%;
+    border-radius: 5px;
+    padding: 12px 24px;
+    margin-left: 2%;
+}
+
+.conteudo{
+    margin-left: 3%;
+    margin-right: 3%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.conteudo p{
+    margin-left: 1%;
+}
+#esquerda{
+    width: 40%;
+    border: 2px black solid;
+    background-color: #488454;
+    font-size: 15px;
+}
+
+#direita{
+    width: 40%;
+    border: 2px black solid;
+    background-color: #488454;
+    font-size: 15px;
+}
+
