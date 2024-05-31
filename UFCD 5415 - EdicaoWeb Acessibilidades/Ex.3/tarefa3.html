@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Ex.3/tarefa3.css">
+    <title>Tarefa 3</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="/Ex.3/img1.png" height="150px" width="300px">
+            <h1 style="font-size: 50px;" id="titulodoc">UFCD 5415 - Tarefa Nrº3</h1>
+        </div>
+    </header>
+    <div class="container">
+        <span>Dados introduzidos pelo o Utilizador</span>
+        <div class="interacoes">
+            <div id="topo">
+                <ul>
+                    <li><a href="#" onclick="introduzirDadosUtilizador()">Prompt</a></li>
+                    <li><a href="#" onclick="apagarDados()">Apagar</a></li>
+                </ul>
+            </div>
+            <ol id="listaDeDados" class="listaDeDados">
+
+            </ol>
+        </div>
+    </div>
+    <div class="container">
+        <div class="conteudo">
+            </div>
+            <div id="direita"> 
+                <h2>Formulário</h2>
+                <form action="" id="form_1" class="form_1">
+                    <div class="texto_user">
+                        <input type="text" placeholder="Título" id="titulo" value="">
+                        <textarea placeholder="Descrição" id="descricao" rows="5"></textarea>
+                    </div>
+                    <div class="images">
+                        <div class="image-option">
+                            <input type="radio" id="image1" name="image" value="/Ex.3/python-icon.webp">
+                            <label for="image1">
+                                <img src="/Ex.3/python-icon.webp" style="width: 50px;">
+                            </label>
+                        </div>
+                        <div class="image-option">
+                            <input type="radio" id="image2" name="image" value="/Ex.3/javascript-icon.png">
+                            <label for="image2">
+                                <img src="/Ex.3/javascript-icon.png" style="width: 50px;">
+                            </label>
+                        </div>
+                        <div class="image-option">
+                            <input type="radio" id="image3" name="image" value="/Ex.3/java-icon.jpg">
+                            <label for="image3">
+                                <img src="/Ex.3/java-icon.jpg" style="width: 50px;">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="buttons">
+                        <input id="btn_enviar" type="button" value="submeter" onclick="submeterform()">
+                    </div>
+                </form>
+                <div id="mostrarform">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/Ex.3/script.js"></script>
+</body>
+</html>
