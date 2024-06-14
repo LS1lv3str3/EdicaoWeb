@@ -1,0 +1,36 @@
+:root {
+	--base: #000;
+	--white: #fff;
+	--grey: #999;
+}
+a{ text-decoration:none;}
+header, nav, main, footer{ padding:1% 5%; }
+header, nav, footer{ background-color: var(--base); }
+header a, nav a, footer a{ color: var(--white); }
+
+.top-icons li{
+	display: inline;
+	margin-left: 5%;
+}
+.top-icons{ text-align:right; }
+
+
+/* Nav bar */
+nav{ color: var(--white); }
+.usr_nav{
+	background-color: red;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.usr_nav ul, li{
+	list-style: none;
+	margin: 0;
+	
+}
+
+.adm_nav{
+	background-color: black;
+}
+/* End Nav Bar */

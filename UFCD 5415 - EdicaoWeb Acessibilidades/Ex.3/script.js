@@ -14,7 +14,8 @@ function apagarDados(){
     }
 }
 
-function submeterform() {
+document.getElementById('form_1').addEventListener('submit', function(event) {
+    event.preventDefault();
     // Guardar os valores do formulário
     const titulo = document.getElementById("titulo").value;
     const descricao = document.getElementById("descricao").value;
@@ -52,4 +53,4 @@ function submeterform() {
     for (let i = 0; i < images.length; i++) {
         images[i].checked = false;
     }
-}
+});
