@@ -19,7 +19,7 @@
 			include 'modules/adm_cases.php';
 			break;
 		default:
-			echo 'Home';
+			include 'modules/home_page_user.php';
 			break;
 	}
 

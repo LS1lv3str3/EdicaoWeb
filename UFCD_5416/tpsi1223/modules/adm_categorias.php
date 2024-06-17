@@ -18,18 +18,21 @@
 		<?php 
 		$edit = $_REQUEST["edit"];
 		if(!$edit){
-			echo '<h3>Criar Nova Categoria</h3>
+		?>
+			<h3>Criar Nova Categoria</h3>
 					<form method="post">
 						<div class="form-floating mb-3">
 			                <input class="form-control" id="cat_nome" type="text" placeholder="Nome da Categoria" name="cat_nome"/>
 			                <label for="cat_nome">Nome da Categoria</label>
 			            </div>
 			            <button class="btn btn-primary" type="submit" name="bt_nova_categoria">Criar</button>
-					</form>';
+					</form>
+		<?php
 		}else{
 			include 'connections/config.php';
 			$q = mysqli_fetch_array(mysqli_query($conn,"SELECT cat_nome FROM categorias WHERE cat_id = '$edit'"));
-			echo '<h3>Editar Categoria</h3>
+		?>
+			<h3>Editar Categoria</h3>
 					<form method="post">
 						<div class="form-floating mb-3">
 							<input type="hidden" name="cat_id" value="'.$edit.'">
@@ -37,14 +40,11 @@
 			                <label for="cat_nome">Nome da Categoria</label>
 			            </div>
 			            <button class="btn btn-primary" type="submit" name="bt_edit_categoria">Editar</button>
-					</form>';
-		}
-
-		?>
-
-
+					</form>
 		
 		<?php 
+		}
+
 		if(isset($_POST["bt_nova_categoria"])){
 			function_nova_categoria($_POST["cat_nome"]);
 		}

@@ -1,6 +1,7 @@
 <?php 
 if(@$_SESSION['utilizador'] == ''){
-	echo '<form method="post">
+?>
+	<form method="post">
     <div class="form-floating mb-3">
         <input class="form-control" id="inputEmail" type="text" name="nome" placeholder="name@example.com" />
         <label for="inputEmail">Nome</label>
@@ -17,7 +18,9 @@ if(@$_SESSION['utilizador'] == ''){
         <a class="small" href="password.html">Forgot Password?</a>
         <button type="submit" name="login" class="btn btn-primary">Login</button>
     </div>
-    </form>';
+    </form>;
+
+<?php
 }
 if(isset($_POST['login'])){
     login_test($_POST["nome"], $_POST["senha"]);
