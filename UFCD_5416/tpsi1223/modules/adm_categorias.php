@@ -2,6 +2,10 @@
 	<div class="col-lg-6 col-sm-6">
 		<h3>Categorias Existentes</h3>
 		<table>
+			<thead>
+				<th>Categoria</th>
+				<th></th>
+			</thead>
 			<tbody>
 				<?php 
 					function_lista_categorias();
@@ -12,36 +16,35 @@
 	<div class="col-lg-6 col-sm-6">
 
 		<?php 
-		$edit = $_REQUEST["edit"];
+		@$edit = $_REQUEST["edit"];
 		if(!$edit){
-		?>
-			<h3>Criar Nova Categoria</h3>
+			echo '<h3>Criar Nova Categoria</h3>
 					<form method="post">
 						<div class="form-floating mb-3">
 			                <input class="form-control" id="cat_nome" type="text" placeholder="Nome da Categoria" name="cat_nome"/>
 			                <label for="cat_nome">Nome da Categoria</label>
 			            </div>
 			            <button class="btn btn-primary" type="submit" name="bt_nova_categoria">Criar</button>
-					</form>
-		<?php
+					</form>';
 		}else{
 			include 'connections/config.php';
 			$q = mysqli_fetch_array(mysqli_query($conn,"SELECT cat_nome FROM categorias WHERE cat_id = '$edit'"));
-		?>
-		<?php
-			echo ' 
-			<h3>Editar Categoria</h3>
+			echo '<h3>Editar Categoria</h3>
 					<form method="post">
 						<div class="form-floating mb-3">
 							<input type="hidden" name="cat_id" value="'.$edit.'">
-							<input class="form-control" id="cat_nome" type="text" value="'.$q["cat_nome"].'" name="cat_nome"/>
-							<label for="cat_nome">Nome da Categoria</label>
-						</div>
-						<button class="btn btn-primary" type="submit" name="bt_edit_categoria">Editar</button>
-					</form>
-			' ;
+			                <input class="form-control" id="cat_nome" type="text" value="'.$q["cat_nome"].'" name="cat_nome"/>
+			                <label for="cat_nome">Nome da Categoria</label>
+			            </div>
+			            <button class="btn btn-primary" type="submit" name="bt_edit_categoria">Editar</button>
+					</form>';
 		}
 
+		?>
+
+
+		
+		<?php 
 		if(isset($_POST["bt_nova_categoria"])){
 			function_nova_categoria($_POST["cat_nome"]);
 		}

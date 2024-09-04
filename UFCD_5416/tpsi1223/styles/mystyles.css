@@ -3,6 +3,9 @@
 	--white: #fff;
 	--grey: #999;
 }
+
+body{min-height: 1000px;}
+img{width: 100%; height: auto;}
 a{ text-decoration:none;}
 header, nav, main, footer{ padding:1% 5%; }
 header, nav, footer{ background-color: var(--base); }
@@ -19,18 +22,17 @@ header a, nav a, footer a{ color: var(--white); }
 nav{ color: var(--white); }
 .usr_nav{
 	background-color: red;
-	display: flex;
-	justify-content: center;
-	align-items: center;
 }
-
-.usr_nav ul, li{
-	list-style: none;
-	margin: 0;
-	
-}
-
 .adm_nav{
 	background-color: black;
 }
+
+header {display: flex;}
+
+nav{display: flex; justify-content: center; width: 100%;}
+nav ul{width: 50%;  display:flex; justify-content: space-between;}
+nav ul li{display: inline-flex;}
 /* End Nav Bar */
+
+/*Footer*/
+footer {color: var(--white);}

@@ -5,7 +5,7 @@
 			include 'adm_utilizadores.php';
 			break;
 		case 'prds':
-			echo 'prds';
+			include 'adm_produtos.php';
 			break;
 		case 'categorias':
 			include 'adm_categorias.php';

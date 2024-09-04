@@ -1,12 +1,10 @@
-<?php
- // Verificar se o usuário está logado
-    if (!isset($_SESSION["log_role"])) {
-        return; // Não exibe nada se não estiver logado
-    } 
-if($_SESSION["log_role"] == 0){
+<?php 
+if(@$_SESSION["log_role"] == 0){
 	//user menu
 	echo '<nav class="usr_nav">';
+		echo '<ul>';
 			function_lista_categorias();
+		echo '</ul>';
 	echo '</nav>';
 }else{
 	//admin menu
@@ -27,3 +25,7 @@ if($_SESSION["log_role"] == 0){
 
 
 ?>
+
+
+
+	

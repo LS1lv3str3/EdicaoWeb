@@ -12,6 +12,7 @@
 	<link rel="stylesheet" type="text/css" href="fonts/css/all.css">
 	<!-- MyStyle -->
 	<link rel="stylesheet" type="text/css" href="styles/mystyles.css">
+	<script src="jquery-3.7.1.js"></script>
 </head>
 <body>
 

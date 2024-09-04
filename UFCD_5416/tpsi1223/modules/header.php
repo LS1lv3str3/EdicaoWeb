@@ -16,7 +16,7 @@
 			
 				<?php 
 				//há ou não login
-				if(!$_SESSION["log_id"]){
+				if(!@$_SESSION["log_id"]){
 					echo '<li><a href="?nav=login"><i class="fa-regular fa-user"></i></a></li>';
 				}else{
 					echo '<li><a href="?nav=account"><i class="fa-solid fa-user"></i></a></li>';
